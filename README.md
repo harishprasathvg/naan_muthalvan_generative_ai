@@ -1,18 +1,7 @@
 # Satellite-Imagery-to-Map-Translation-using-Pix2Pix-GAN-framework
 
-<img src="Visualization/8.png"><br><br>
-
-# Trained Generator and Discriminator:<br>
-* Click this link to download the trained weights for the Sat2Map Generator and Discriminator: [Download Weights](https://drive.google.com/file/d/1vvv2dXL98_M4SrjUgGps2vt1FzGRKH7B/view?usp=sharing)
 * Dataset: [Download Sat2Map Dataset](https://drive.google.com/file/d/1s5a2UeJR4H_KJ-nV4NmRMkBHr3zn20Tf/view?usp=sharing)
 
-# Hyper-parameters
-As suggested by the paper in the reference, here are the values of the hyper-parameters to train the Sat2Map model:</br>
-* Batch size: **1**
-* Input and Output image size: **256 x 256**
-* Learning rate: **0.0002**
-* Momentum: [β1, β2] = **[0.5, 0.999]**
-* λ_L1 = 100
 
 # Ideas and Intuition of cGAN (conditional GAN)
 * Original GAN trains the Generator to map a random noise **z** to the output image **G(z)** which should look as realistic as possible and trains the Discriminator to recognize the input image **x** as real/fake image based solely on the input image **x**.
@@ -56,6 +45,3 @@ We simply combine GAN loss and L1 Loss to have the final Loss for the entire alg
 <img src="Visualization/7.png"> <br>
 <br><br>
 * The Generator successfully learned to capture main structures in satellite imagery such as roads, buildings, forests, rivers, seas, etc, map those structures to an encoded vector, and then map the encoded vector back to a full image with map representation.
-
-# Other applications
-* Pix2Pix GAN framework is a common framework for any image translation task. The algorithm I implemented above was trained specifically to translate Satellite Imagery to Map image. If you have access to other image translation dataset, you only need to retrain the model to have another Generator which translate other types of image. Some examples are Photos to Drawings, Drawings to Photos, B&W images to Colored Images, Photos to Cartoon, Photos to Anime, etc.
