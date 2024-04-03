@@ -1,7 +1,5 @@
 # Satellite-Imagery-to-Map-Translation-using-Pix2Pix-GAN-framework
-PyTorch Implementation of Pix2Pix framework from scratch to train a U-Net with Generative Adversarial Network which translates Satellite Imagery to an equivalent Map.<br>
-<b>Reference</b>: https://arxiv.org/abs/1611.07004<br>
-**Sample:**<br><br>
+
 <img src="Visualization/8.png"><br><br>
 
 # Trained Generator and Discriminator:<br>
