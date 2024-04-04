@@ -1,5 +1,5 @@
-Naan muthalvan Generative ai project
-                        V G Harish Prasath
+Naan muthalvan Generative AI project -
+                        V G Harish Prasath -
                         715521104013
 # Satellite Image to Map Translation using Pix2Pix GAN framework
 * Dataset: [Download Sat2Map Dataset](https://drive.google.com/file/d/1s5a2UeJR4H_KJ-nV4NmRMkBHr3zn20Tf/view?usp=sharing)
