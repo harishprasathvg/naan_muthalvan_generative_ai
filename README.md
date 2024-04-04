@@ -10,6 +10,11 @@ Naan muthalvan Generative AI project -
 # Solution and Approach
 Our solution harnesses the power of conditional Generative Adversarial Networks (cGANs) within the Pix2Pix framework to seamlessly translate satellite images into corresponding map representations. Implementing a U-Net architecture for the generator and a tailored convolutional neural network for the discriminator, we ensure both realism and fidelity in our output. By integrating adversarial and L1 loss functions, our approach not only captures overall distribution but also preserves fine-grained details, culminating in accurate and visually compelling results. Through this meticulously crafted strategy, we facilitate effective satellite image interpretation for diverse applications, from urban planning to environmental analysis
 
+# Generator:
+Our U-Net-based generator extracts core features from satellite images and maps them to corresponding high-resolution map representations, ensuring both realism and fidelity in the output.
+
+# Discriminator:
+Employing a custom convolutional neural network architecture, our discriminator efficiently distinguishes between real and generated map images by considering both the generated output and the corresponding satellite input, enhancing the overall adversarial training process.
 
 # Results
 * The image patch with 24 samples below shows the results of the Sat2Map Generator.
